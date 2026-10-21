@@ -1,3 +1,18 @@
+:root{
+    /*Cor de fundo*/
+    --background-primary-color: #FFFFFF;
+    --background-secondary-color: #F5F5F5;
+    --background-tertiary-color: #000000;
+
+    /*Cor dos botões*/
+    --button-primary-color: #B81515; 
+    --button-secondary-color: #8f0101;
+
+    /*Cor de texto*/
+    --text-primary-color: #222222;
+    --text-secondary-color: #FFFFFF;
+}
+
 /*RESET*/
 *{
     margin: 0;
