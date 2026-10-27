@@ -32,6 +32,21 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "Montserrat";
+}
+
+.section-title h2 {
+  font-weight: 700px;
+  font-size: 28px;
+  text-align: center;
+  color: var(--text-primary-color);
+}
+
+.section-title hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border: none;
+  margin: 16px auto 32px;
 }
