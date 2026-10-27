@@ -37,7 +37,7 @@ body {
 }
 
 .section-title h2 {
-  font-weight: 700px;
+  font-weight: var(--title-weight);
   font-size: 28px;
   text-align: center;
   color: var(--text-primary-color);
