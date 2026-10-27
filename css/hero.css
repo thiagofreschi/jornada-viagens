@@ -6,6 +6,15 @@
   background-size: cover;
 }
 
+.hero h2{
+  padding: 88px 24px;
+  margin: 0;
+  font-weight: var(--text-weight);
+  font-size: 20px;
+  text-align: center;
+  line-height: 32px;
+}
+
 @media screen and (min-width: 768px) {
   .hero-img {
     height: 620px;
@@ -22,6 +31,9 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .hero h2{
+    padding: 104px 120px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -30,5 +42,8 @@
     background-image: url(../img/hero-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .hero h2{
+    padding: 104px 500px;
   }
 }
