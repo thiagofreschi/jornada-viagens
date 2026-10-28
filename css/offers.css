@@ -38,7 +38,7 @@
 .button{
     width: 280px;
     height: 64px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     display: inline-block;
     border-radius: 16px;
     line-height: 64px;

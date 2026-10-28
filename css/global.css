@@ -56,3 +56,9 @@ body {
     font-size: 32px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .button:hover {
+    background-color: var(--secondary-color);
+  }
+}
