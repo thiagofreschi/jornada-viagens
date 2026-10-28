@@ -8,6 +8,7 @@
     border-radius: 16px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 24px;
 }
 
 .card header{
@@ -66,3 +67,8 @@ media screen and (min-width: 1024){
     display: inline-block;
 }
 }
+
+.category{
+    margin-top: 88px;
+}
+
