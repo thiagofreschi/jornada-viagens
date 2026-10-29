@@ -1,74 +1,96 @@
-.card{
-    color: var(--text-secondary-color);
-    background-color: black;
-    width: 312px;
-    height: 288px;
-    box-sizing: border-box;
-    padding: 24px 16px;
-    border-radius: 16px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 24px;
+.offers-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
-.card header{
-    display: block;
-    background-color: transparent;
-    position: static;
-    padding: 0;
-    margin-bottom: 24px;
+.card:nth-child(1){
+    background: url(../img/japao-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:nth-child(2){
+    background: url(../img/San-andreas-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card {
+  color: var(--text-secondary-color);
+  width: 312px;
+  height: 288px;
+  box-sizing: border-box;
+  padding: 24px 16px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.card header {
+  display: block;
+  background-color: transparent;
+  position: static;
+  padding: 0;
+  margin-bottom: 24px;
 }
 
 .card p {
-    font-size: 20px;
-    font-weight: var(--text-weight);
+  font-size: 20px;
+  font-weight: var(--text-weight);
 }
 
-.card h3{
-    font-size: 40px;
-    font-weight: var(--title-weight);
-    margin-top: 8px;
+.card h3 {
+  font-size: 40px;
+  font-weight: var(--title-weight);
+  margin-top: 8px;
 }
 
 .card span {
-    font-size: 32px;
-    margin-top: 24px;
-    display: inline-block;
+  font-size: 32px;
+  margin-top: 24px;
+  display: inline-block;
 }
 
-.button{
-    width: 280px;
-    height: 64px;
-    background-color: var(--primary-color);
-    display: inline-block;
-    border-radius: 16px;
-    line-height: 64px;
-    font-weight: var(--title-weight); 
-    font-size: 20px;;
-    color: var(--text-secondary-color);  
-    text-decoration: none;
+.button {
+  width: 280px;
+  height: 64px;
+  background-color: var(--primary-color);
+  display: inline-block;
+  border-radius: 16px;
+  line-height: 64px;
+  font-weight: var(--title-weight);
+  font-size: 20px;
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
 
-media screen and (min-width: 1024){
-.card p {
+@media screen and (min-width: 768px) {
+  .offers-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024) {
+  .card p {
     font-size: 20px;
     font-weight: var(--text-weight);
-}
+  }
 
-.card h3{
+  .card h3 {
     font-size: 48px;
     font-weight: var(--title-weight);
     margin-top: 8px;
-}
+  }
 
-.card span {
+  .card span {
     font-size: 40px;
     margin-top: 24px;
     display: inline-block;
-}
-}
-
-.category{
-    margin-top: 88px;
+  }
 }
 
+.category {
+  margin-top: 88px;
+}
