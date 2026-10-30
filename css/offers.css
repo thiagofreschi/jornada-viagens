@@ -16,6 +16,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.card:nth-child(3){
+  background: url(../img/paraiba-card.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .card {
   color: var(--text-secondary-color);
   width: 312px;
