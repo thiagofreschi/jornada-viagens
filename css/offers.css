@@ -63,19 +63,6 @@
   display: inline-block;
 }
 
-.button {
-  width: 280px;
-  height: 64px;
-  background-color: var(--primary-color);
-  display: inline-block;
-  border-radius: 16px;
-  line-height: 64px;
-  font-weight: var(--title-weight);
-  font-size: 20px;
-  color: var(--text-secondary-color);
-  text-decoration: none;
-}
-
 @media screen and (min-width: 768px) {
   .offers-card {
     flex-direction: row;
