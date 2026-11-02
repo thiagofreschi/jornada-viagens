@@ -21,6 +21,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.card:nth-child(4){
+  background: url(../img/manaus-card.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .card {
   color: var(--text-secondary-color);
   width: 312px;
@@ -69,6 +76,42 @@
   text-decoration: none;
 }
 
+.category-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.img-category{
+  width: 80px;
+  height: 80px;
+  background-color: var(--background-secondary-color);
+  margin-left: 70px;
+}
+
+.button-category{
+  width: 280px;
+  height: 34px;
+  font-weight: var(--title-weight);
+  font-size: 28px;
+  color: var(--text-primary-color);
+  text-decoration: none;
+  display: block;
+  position: static;
+  margin-top: 41px;
+}
+
+.category{
+  width: 312px;
+  height: 220px;
+  background-color: var(--background-secondary-color);
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-align: center;
+  padding: 16px 8px;
+}
+
 @media screen and (min-width: 768px) {
   .offers-card {
     flex-direction: row;
@@ -96,6 +139,6 @@
   }
 }
 
-.category {
+.category-title {
   margin-top: 88px;
 }
