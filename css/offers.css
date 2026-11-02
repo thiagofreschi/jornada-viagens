@@ -5,30 +5,30 @@
   gap: 24px;
 }
 
-.card:nth-child(1){
+.offers-card .card:nth-child(1){
     background: url(../img/japao-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.card:nth-child(2){
+.offers-card .card:nth-child(2){
     background: url(../img/San-andreas-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card:nth-child(3){
+.offers-card .card:nth-child(3){
   background: url(../img/paraiba-card.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.card:nth-child(4){
+.offers-card .card:nth-child(4){
   background: url(../img/manaus-card.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.card {
+.offers-card .card {
   color: var(--text-secondary-color);
   width: 312px;
   height: 288px;
@@ -38,7 +38,7 @@
   text-align: center;
 }
 
-.card header {
+.offers-card .card header {
   display: block;
   background-color: transparent;
   position: static;
@@ -46,18 +46,18 @@
   margin-bottom: 24px;
 }
 
-.card p {
+.offers-card .card p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.card h3 {
+.offers-card .card h3 {
   font-size: 40px;
   font-weight: var(--title-weight);
   margin-top: 8px;
 }
 
-.card span {
+.offers-card .card span {
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
@@ -76,42 +76,6 @@
   text-decoration: none;
 }
 
-.category-card{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.img-category{
-  width: 80px;
-  height: 80px;
-  background-color: var(--background-secondary-color);
-  margin-left: 70px;
-}
-
-.button-category{
-  width: 280px;
-  height: 34px;
-  font-weight: var(--title-weight);
-  font-size: 28px;
-  color: var(--text-primary-color);
-  text-decoration: none;
-  display: block;
-  position: static;
-  margin-top: 41px;
-}
-
-.category{
-  width: 312px;
-  height: 220px;
-  background-color: var(--background-secondary-color);
-  box-sizing: border-box;
-  border-radius: 16px;
-  text-align: center;
-  padding: 16px 8px;
-}
-
 @media screen and (min-width: 768px) {
   .offers-card {
     flex-direction: row;
@@ -120,7 +84,14 @@
   }
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
+  .offers-card {
+    display: grid;
+    grid-template-columns: repeat(2, 312px);
+    justify-content: center;
+    gap: 24px;
+  }
+
   .card p {
     font-size: 20px;
     font-weight: var(--text-weight);
@@ -139,6 +110,29 @@
   }
 }
 
-.category-title {
-  margin-top: 88px;
+@media screen and (min-width: 1092px) {
+  
+  .offers-card {
+  display: grid;
+  grid-template-columns: repeat(2, 312px);
+  justify-content: center;
+  gap: 24px;
+  }
+
+  .card p {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+  }
+
+  .card h3 {
+    font-size: 48px;
+    font-weight: var(--title-weight);
+    margin-top: 8px;
+  }
+
+  .card span {
+    font-size: 40px;
+    margin-top: 24px;
+    display: inline-block;
+  }
 }
