@@ -86,6 +86,20 @@ section.hero {
   text-align: center;
 }
 
+.content-title {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  color: var(--text-primary-color);
+}
+
+.content-text {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  color: var(--text-primary-color);
+  line-height: 1.5;
+
+}
+
 @media screen and (min-width: 768px) {
   .section-title h2 {
     font-size: 32px;

@@ -1,0 +1,42 @@
+.image-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px 312px;
+  gap: 12px;
+}
+
+.image-content .image {
+  width: 312px;
+  height: 254px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-content .image.people {
+  width: 312px;
+  height: 182px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.image-content .people {
+  grid-column: 1 / 3;
+}
+
+.image-content .bag {
+  background-image: url(../img/bag-mobile.jpg);
+}
+
+.image-content .passport {
+  background-image: url(../img/passport-mobile.jpg);
+}
+
+.image-content .people {
+  background-image: url(../img/people-mobile.jpg);
+}
+
+.text-content h3, p {
+    margin-bottom: 24px;
+}
