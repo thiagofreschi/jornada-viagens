@@ -1,0 +1,116 @@
+.destinations {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.destinations .items header {
+  display: block;
+  background-color: transparent;
+  position: static;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.destinations-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.destinations .items .img-item {
+  width: 100%;
+  height: 368px;
+}
+
+.destinations .items.tokyo .img-item {
+  background-image: url(../img/Tokyo-mobile.jpg);
+  background-size: cover;
+}
+
+.destinations .items.osaka .img-item {
+  background-image: url(../img/Osaka-mobile.jpg);
+  background-size: cover;
+  margin-top: 40px;
+}
+.destinations .items header h4 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  color: var(--text-primary-color);
+  text-align: left;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.destinations .items header p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  color: var(--text-primary-color);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.destinations .button {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .destinations .items.tokyo .img-item {
+    background-image: url(../img/Tokyo-tablet.jpg);
+    background-size: cover;
+  }
+
+  .destinations .items.osaka .img-item {
+    background-image: url(../img/Osaka-tablet.jpg);
+    background-size: cover;
+    margin-top: 40px;
+  }
+
+  .destinations {
+    width: 648px;
+  }
+
+  .destinations .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destinations {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .destinations .items {
+    width: 50%;
+  }
+
+  .destinations .items .img-item {
+    width: 100%;
+    height: 452px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .destinations .items.tokyo .img-item {
+    background-image: url(../img/Tokyo-desktop.jpg);
+  }
+
+  .destinations .items.osaka .img-item {
+    background-image: url(../img/Osaka-desktop.jpg);
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    width: 1200px;
+  }
+
+  .destinations-items {
+    flex-direction: row;
+  }
+}

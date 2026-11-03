@@ -5,23 +5,30 @@
   gap: 24px;
 }
 
-.card:nth-child(1){
+.offers-card .card:nth-child(1){
     background: url(../img/japao-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.card:nth-child(2){
+.offers-card .card:nth-child(2){
     background: url(../img/San-andreas-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card:nth-child(3){
+.offers-card .card:nth-child(3){
   background: url(../img/paraiba-card.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.card {
+
+.offers-card .card:nth-child(4){
+  background: url(../img/manaus-card.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offers-card .card {
   color: var(--text-secondary-color);
   width: 312px;
   height: 288px;
@@ -31,7 +38,7 @@
   text-align: center;
 }
 
-.card header {
+.offers-card .card header {
   display: block;
   background-color: transparent;
   position: static;
@@ -39,34 +46,21 @@
   margin-bottom: 24px;
 }
 
-.card p {
+.offers-card .card p {
   font-size: 20px;
   font-weight: var(--text-weight);
 }
 
-.card h3 {
+.offers-card .card h3 {
   font-size: 40px;
   font-weight: var(--title-weight);
   margin-top: 8px;
 }
 
-.card span {
+.offers-card .card span {
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
-}
-
-.button {
-  width: 280px;
-  height: 64px;
-  background-color: var(--primary-color);
-  display: inline-block;
-  border-radius: 16px;
-  line-height: 64px;
-  font-weight: var(--title-weight);
-  font-size: 20px;
-  color: var(--text-secondary-color);
-  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -77,7 +71,14 @@
   }
 }
 
-@media screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
+  .offers-card {
+    display: grid;
+    grid-template-columns: repeat(2, 312px);
+    justify-content: center;
+    gap: 24px;
+  }
+
   .card p {
     font-size: 20px;
     font-weight: var(--text-weight);
@@ -96,6 +97,29 @@
   }
 }
 
-.category {
-  margin-top: 88px;
+@media screen and (min-width: 1092px) {
+  
+  .offers-card {
+  display: grid;
+  grid-template-columns: repeat(2, 312px);
+  justify-content: center;
+  gap: 24px;
+  }
+
+  .card p {
+    font-size: 20px;
+    font-weight: var(--text-weight);
+  }
+
+  .card h3 {
+    font-size: 48px;
+    font-weight: var(--title-weight);
+    margin-top: 8px;
+  }
+
+  .card span {
+    font-size: 40px;
+    margin-top: 24px;
+    display: inline-block;
+  }
 }
