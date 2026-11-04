@@ -1,42 +1,62 @@
 .image-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 150px 312px;
-  gap: 12px;
+  gap: 24px;
+  height: 460px;
+  width: 100%;
 }
 
-.image-content .image {
-  width: 312px;
-  height: 254px;
+.payment .content-container .image-content .bag {
+  background-image: url(../img/bag.png);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.image-content .image.people {
-  width: 312px;
-  height: 182px;
+.payment .content-container .image-content .passport {
+  background-image: url(../img/passport.png);
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.image-content .people {
-  grid-column: 1 / 3;
+.payment .content-container .image-content .people {
+  background-image: url(../img/people.png);
+  background-size: cover;
 }
 
-.image-content .bag {
-  background-image: url(../img/bag-mobile.jpg);
+.payment .content-container .image-content .people {
+  grid-column: span 2;
 }
 
-.image-content .passport {
-  background-image: url(../img/passport-mobile.jpg);
+.text-content h3,
+p {
+  margin-bottom: 24px;
 }
 
-.image-content .people {
-  background-image: url(../img/people-mobile.jpg);
+.payment .content-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.text-content h3, p {
-    margin-bottom: 24px;
+@media screen and (min-width: 768px) {
+  .payment .content-container .image-content .bag {
+    background-image: url(../img/bag-tablet.png);
+    background-size: cover;
+  }
+
+  .payment .content-container .image-content .passport {
+    background-image: url(../img/passport-tablet.png);
+    background-size: cover;
+  }
+
+  .payment .content-container .image-content .people {
+    background-image: url(../img/people-tablet.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payment .content-container .text-content {
+    width: 361px;
+  }
+  .payment .content-container .image-content {
+    width: 790px;
+  }
 }
