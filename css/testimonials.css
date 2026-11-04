@@ -1,0 +1,9 @@
+.conteiner-testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteiner-testimonials article, header{
+  background-color: #fff;
+}

@@ -30,11 +30,6 @@ p {
   margin-bottom: 24px;
 }
 
-.payment .content-container {
-  display: flex;
-  justify-content: space-between;
-}
-
 @media screen and (min-width: 768px) {
   .payment .content-container .image-content .bag {
     background-image: url(../img/bag-tablet.png);
@@ -53,6 +48,11 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  .payment .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .payment .content-container .text-content {
     width: 361px;
   }
