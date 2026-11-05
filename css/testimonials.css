@@ -1,9 +1,60 @@
-.conteiner-testimonials{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.conteiner-testimonials article header {
+  background-color: #fff;
+  width: 100%;
+  text-align: left;
 }
 
-.conteiner-testimonials article, header{
-  background-color: #fff;
+.conteiner-testimonials {
+  width: 100%;
+}
+
+.conteiner-testimonials article {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conteiner-testimonials article header p {
+  font-size: 16px;
+  font-weight: var(--text-weight);
+  width: 100%;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+
+.conteiner-testimonials article footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.conteiner-testimonials article footer img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.prifile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.prifile-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.rating {
+  display: flex;
+  gap: 3px;
+}
+
+.rating .star {
+  color: #c90016;
+  font-size: 32px;
+  line-height: 1;
 }
