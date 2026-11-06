@@ -1,0 +1,43 @@
+.hero-footer {
+  width: 100%;
+}
+
+.pre-footer {
+  height: 400px;
+  background-image: url(../img/pré-rodapé-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rodape-final {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.hero-footer .rodape-final .logo-footer {
+  background-image: url(../img/Logo-branco-rodapé.png);
+  background-position: center;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 161px;
+  height: 40px;
+  margin: 32px auto 16px;
+}
+
+.hero-footer .rodape-final header {
+}
+
+.hero-footer .rodape-final header p:nth-child(1) {
+  color: var(--background-secondary-color);
+  padding: 0px;
+  margin: 0 auto;
+  font-weight: var(--text-weight);
+  font-size: 16px;
+  text-align: center;
+}
+
+.hero-footer .rodape-final header.redes {
+  color: #fff;
+}
